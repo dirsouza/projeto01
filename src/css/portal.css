@@ -31,13 +31,13 @@ header {
     width: 100%;
     height: 150px;
     background-color: rgba(94, 41, 154, .8);
-    z-index: 2;
+    z-index: 1;
     position: relative;
 }
 header .header-black {
     background-color: #000;
     height: 40px;
-    z-index: 3;
+    z-index: 2;
     position: relative;
 }
 header .header-black li {
@@ -132,7 +132,7 @@ header .container {
 header #logotipo {
     position: absolute;
     top: 24px;
-    z-index: 4;
+    z-index: 3;
 }
 header #logotipo:hover {
     opacity: .7;
@@ -186,7 +186,8 @@ header #logotipo:hover {
     background-color: #9075ae;
 }
 #menu li a.ativo {
-    background-color: #9075ae;
+    background-color: rgba(94,41,154,0.50);
+    color: #FDE192;
 }
 #menu li.search .input-group {
     top: 8px;
@@ -498,6 +499,6 @@ footer .list-socials i {
     overflow: hidden;
 }
 #videos .video video {
-    box-shadow: 0 0 15px #5E299A;
-    border: 1px solid #5E299A;
+    box-shadow: 10px 10px 15px #5E299A;
+    border: 1px solid #FDE192;
 }

@@ -48,8 +48,8 @@ $(function () {
             autoplay: 'autoplay'
         });
     });
-    
-    plyr.setup({
+
+    let videos = plyr.setup('video', {
         i18n: {
             restart: "Reiniciar",
             rewind: "Voltar {seektime} segundos",
@@ -68,5 +68,13 @@ $(function () {
             controls: true,
             seek: true
         }
+    });
+
+    videos[0].setVolume(3);
+
+    videos[0].on('enterfullscreen', function () {
+        $('header').css('z-index', 0);
+    }).on('exitfullscreen', function () {
+        $('header').css('z-index', 1);
     });
 });
