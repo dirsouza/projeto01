@@ -34,6 +34,10 @@ header {
     z-index: 1;
     position: relative;
 }
+#btn-bars, #btn-search,
+#btn-news-prev, #btn-news-next {
+    display: none;
+}
 header .header-black {
     background-color: #000;
     height: 40px;
@@ -237,6 +241,7 @@ header #logotipo:hover {
 #news {
     position: relative;
     top: -110px;
+    z-index: 0;
 }
 #news h2 {
     color: #5e2799;
@@ -348,13 +353,14 @@ footer {
 }
 footer .row {
     width: 101%;
+    margin-left: 0;
 }
 footer .row p {
     line-height: 59px;
     margin-bottom: 0;
 }
 footer .row-grid {
-    height: 200px;
+    height: 240px;
     background-color: #171F26;
 }
 footer .row-footer {
@@ -458,6 +464,9 @@ footer .list-socials a:hover {
 footer .list-socials i {
     font-size: 16px;
     margin: 5px auto;
+}
+footer .list-socials li.page-up {
+    display: none;
 }
 #videos {
     position: relative;
